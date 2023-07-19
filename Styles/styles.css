@@ -8,13 +8,14 @@
 body {
   font-family: "poppins", sans-serif;
   margin: 0;
-  background-color: var(--primary);
+  background-color: var(--text-dim);
 }
 
 .header h1 {
   text-transform: uppercase;
   margin-bottom: 0;
   letter-spacing: 8px;
+  transition: 0.3s;
 }
 .header p {
   text-transform: capitalize;
@@ -27,6 +28,30 @@ body {
   padding: 2px;
   color: white;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   letter-spacing: 5px;
   margin-top: 0;
+  box-shadow: 0 1px 10px black;
+  transition: 0.3s;
+  position: relative;
+}
+.header:hover {
+  background-color: var(--text-secondary);
+  color: var(--text-primary);
+  padding-bottom: 80px;
+}
+.header:hover .hidden-bio {
+  opacity: 1;
+}
+.hidden-bio {
+  position: absolute;
+  font-size: 12px;
+  max-width: 80%;
+  line-height: 180%;
+  opacity: 0;
+  bottom: 5%;
+  transition: 0.5s;
 }
