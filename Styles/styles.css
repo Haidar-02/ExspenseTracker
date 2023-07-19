@@ -9,17 +9,23 @@ body {
   font-family: "poppins", sans-serif;
   margin: 0;
   background-color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
 .header h1 {
   text-transform: uppercase;
   margin-bottom: 0;
   letter-spacing: 8px;
-  transition: 0.3s;
+  cursor: default;
 }
 .header p {
   text-transform: capitalize;
   margin-top: 0;
+  cursor: default;
 }
 .header {
   width: 100vw;
@@ -39,8 +45,8 @@ body {
   position: relative;
 }
 .header:hover {
-  background-color: var(--text-secondary);
-  color: var(--text-primary);
+  background-color: white;
+  color: var(--secondary);
   padding-bottom: 80px;
 }
 .header:hover .hidden-bio {
@@ -54,4 +60,35 @@ body {
   opacity: 0;
   bottom: 5%;
   transition: 0.5s;
+  text-transform: lowercase;
+}
+
+.expense-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 70%;
+}
+.expense-header h2 {
+  letter-spacing: 3px;
+  color: var(--text-primary);
+}
+.add-btn {
+  padding: 10px 20px;
+  font-family: "poppins", sans-serif;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: var(--text-secondary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.add-btn:hover {
+  background-color: var(--secondary);
+}
+.add-btn:active {
+  opacity: 0.6;
 }
