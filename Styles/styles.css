@@ -74,6 +74,7 @@ body {
 .expense-header h2 {
   letter-spacing: 3px;
   color: var(--text-primary);
+  font-variant: small-caps;
 }
 .add-btn {
   padding: 10px 20px;
@@ -81,13 +82,14 @@ body {
   border-radius: 5px;
   outline: none;
   border: none;
-  background-color: var(--text-secondary);
+  background-color: var(--secondary);
   color: var(--text-primary);
   cursor: pointer;
   transition: 0.3s;
 }
 .add-btn:hover {
-  background-color: var(--secondary);
+  background-color: var(--text-primary);
+  color: var(--secondary);
 }
 .add-btn:active {
   opacity: 0.6;
@@ -112,6 +114,12 @@ body {
 .expense-table td {
   color: var(--text-primary);
 }
+.expense-table tr {
+  transition: 0.2s;
+}
+.expense-table tr:hover {
+  background-color: #423e37;
+}
 .expense-table {
   width: 100%;
   display: flex;
@@ -119,14 +127,25 @@ body {
   justify-content: center;
 }
 .delet-col {
-  width: 40px;
+  width: 20px;
 }
-#dlt-btn {
-  width: 30px;
+.dlt-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
   cursor: pointer;
-  mix-blend-mode: hard-light;
-  transition: 0.2s;
+  transition: 0.3s;
 }
-#dlt-btn:hover {
-  scale: 0.8;
+.dlt-btn:hover {
+  background-color: red;
+  border-color: red;
+}
+.dlt-btn:active {
+  opacity: 0.6;
+}
+#stats-table {
+  margin-top: 50px;
 }
