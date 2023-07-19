@@ -92,3 +92,41 @@ body {
 .add-btn:active {
   opacity: 0.6;
 }
+
+.expense-table table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.expense-table th,
+.expense-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.expense-table th {
+  background-color: #f2f2f2;
+}
+.expense-table td {
+  color: var(--text-primary);
+}
+.expense-table {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delet-col {
+  width: 40px;
+}
+#dlt-btn {
+  width: 30px;
+  cursor: pointer;
+  mix-blend-mode: hard-light;
+  transition: 0.2s;
+}
+#dlt-btn:hover {
+  scale: 0.8;
+}

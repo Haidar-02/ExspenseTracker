@@ -7,6 +7,10 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/your-fontawesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="Styles/styles.css" />
     <title>Expense Tracker</title>
@@ -25,6 +29,29 @@
     <div class="expense-header">
       <h2>Expenses Table</h2>
       <button class="add-btn">Add New Expense</button>
+    </div>
+
+    <div class="expense-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Pricing</th>
+            <th class="delet-col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Expense 1</td>
+            <td>100</td>
+            <td>$</td>
+            <td>
+              <img src="Assets/delete.svg" alt="delete-icon" id="dlt-btn" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
