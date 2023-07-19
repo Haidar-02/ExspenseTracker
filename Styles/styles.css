@@ -149,3 +149,116 @@ body {
 #stats-table {
   margin-top: 50px;
 }
+
+.form-section {
+  position: absolute;
+  display: none;
+  inset: 0;
+  background-color: #423e3770;
+  align-items: center;
+  justify-content: center;
+}
+.expense-form {
+  background-color: var(--text-primary);
+  width: 40%;
+  height: 70%;
+  padding: 10px 30px;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.expense-form p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.form-label {
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+.form-element {
+  margin-top: 3px;
+  margin-bottom: 10px;
+  padding: 7px 10px;
+  transition: 0.2s;
+  outline: none;
+  border: 1px solid var(--primary);
+  font-family: "poppins", sans-serif;
+}
+.form-element:focus {
+  border: 1px solid var(--secondary);
+}
+.form-element:hover {
+  background-color: #e3b23c;
+  color: white;
+}
+.form-element:hover::placeholder {
+  color: white;
+}
+.form-input {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.price,
+.currency {
+  display: flex;
+  flex-direction: column;
+}
+.currency {
+  flex: 1;
+}
+.price {
+  flex: 2;
+}
+
+.add-action-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--text-primary);
+  background-color: var(--text-dim);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.add-action-btn:hover {
+  background-color: var(--secondary);
+}
+.add-action-btn:active {
+  opacity: 0.6;
+}
+.cancel-action-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--text-primary);
+  background-color: var(--primary);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cancel-action-btn:hover {
+  background-color: red;
+}
+.cancel-action-btn:active {
+  opacity: 0.6;
+}
+button {
+  font-family: "poppins", sans-serif;
+}
+.form-actions {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+  gap: 10px;
+}

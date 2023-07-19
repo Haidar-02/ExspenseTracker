@@ -71,6 +71,51 @@
         </tbody>
       </table>
     </div>
+    <div class="form-section">
+      <div class="expense-form">
+        <h2>Add New Expense</h2>
+        <p>Please fill the below info to add a new expense to your table</p>
+        <div class="form-input">
+          <label for="expense-name" class="form-label">Expense Name</label>
+          <input
+            type="text"
+            id="expense-name"
+            class="form-element"
+            placeholder="expense name here"
+            maxlength="40"
+          />
+          <label for="expense-amount" class="form-label">Expense Amount</label>
+          <input
+            type="number"
+            id="expense-amount"
+            class="form-element"
+            placeholder="expense amout here"
+          />
+          <div class="pricing">
+            <div class="price">
+              <label for="expense-amount" class="form-label">Unit Price</label>
+              <input
+                type="number"
+                id="expense-amount"
+                class="form-element"
+                placeholder="expense unit price here"
+              />
+            </div>
+            <div class="currency">
+              <label for="expense-currency" class="form-label">Currency</label>
+              <select class="form-element" id="expense-currency">
+                <option value="USD">USD</option>
+                <option value="LBP">LBP</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="add-action-btn">Add</button>
+            <button class="cancel-action-btn">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="Scripts/script.js"></script>
