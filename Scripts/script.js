@@ -1,22 +1,18 @@
 let expenseCount = 0;
 $(document).ready(function () {
-  // Add New Expense button click event
   $(".add-btn").click(function () {
     $(".form-section").fadeIn(200);
     $(".form-section").css("display", "flex");
   });
 
-  // Cancel button click event
   $(".cancel-action-btn").click(function () {
     $(".form-section").fadeOut();
   });
 
-  // Add button click event
   $(".add-action-btn").click(function () {
     var expenseName = $("#expense-name").val();
     var expenseAmount = $("#expense-amount").val();
 
-    // Add new row to expense table
     var newExpense =
       "<tr>" +
       "<td>" +
@@ -29,7 +25,6 @@ $(document).ready(function () {
       "</tr>";
     $("#expense-body").append(newExpense);
 
-    // Clear form fields
     $("#expense-name").val("");
     $("#expense-amount").val("");
 
@@ -37,14 +32,12 @@ $(document).ready(function () {
 
     let total = $("#totalExpenses");
     total.text(expenseCount);
-    // Hide form
     $(".form-section").fadeOut();
     $("#stats-table").css("display", "flex");
     $("#expense-table").css("display", "flex");
     $("#empty-list").css("display", "none");
   });
 
-  // Delete button click event
   $("#expense-body").on("click", ".dlt-btn", function () {
     $(this).closest("tr").remove();
     expenseCount--;
